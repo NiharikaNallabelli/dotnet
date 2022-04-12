@@ -1,0 +1,24 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  labels:
+    app: dot-net
+  name: dot-net
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: dot-net
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+      labels:
+        app: dot-net
+    spec:
+      containers:
+      - image: niharika0606/dot-net:v1
+        name: dot-net
+        resources: {}
+status: {}
