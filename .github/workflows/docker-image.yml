@@ -26,6 +26,6 @@ jobs:
         name: Build and push
         uses: docker/build-push-action@v2
         with:
-          context:  dotnet/amd64/hello-world/
+          context:  amd64/hello-world/.
           push: true
           tags: niharika0606/dot-net:latest
