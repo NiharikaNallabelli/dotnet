@@ -27,4 +27,4 @@ jobs:
         with:
           context:  amd64/hello-world/.
           push: true
-          tags: niharika0606/dot-net:v1
+          tags: niharika0606/dot-net:v1            
