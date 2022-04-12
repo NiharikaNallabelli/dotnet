@@ -27,5 +27,5 @@ jobs:
         uses: docker/build-push-action@v2
         with:
           context:  amd64/hello-world/.
-          push: true
+          push: true    
           tags: niharika0606/dot-net:latest
