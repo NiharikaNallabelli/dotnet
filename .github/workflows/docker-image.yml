@@ -35,5 +35,5 @@ jobs:
     - uses: actions/checkout@v2
     - uses: Klemensas/action-autotag@stable
       with:
-        GITHUB_TOKEN: "${{ secrets.GITHUB_TOKEN }}"
+        TOKEN_GITHUB: "${{ secrets.TOKEN_GITHUB }}"
         package_root: "/path/to/subdirectory"
