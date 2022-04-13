@@ -37,3 +37,5 @@ jobs:
       with:
         TOKEN_GITHUB: "${{ secrets.TOKEN_GITHUB }}"
         package_root: "/path/to/subdirectory"
+        tag_prefix: "v"
+
