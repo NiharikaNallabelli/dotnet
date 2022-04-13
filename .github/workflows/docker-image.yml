@@ -27,4 +27,13 @@ jobs:
         with:
           context:  amd64/hello-world/.
           push: true
-          tags: niharika0606/dot-net:v1            
+          tags: niharika0606/dot-net:v1  
+    
+   build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - uses: Klemensas/action-autotag@stable
+      with:
+        GITHUB_TOKEN: "${{ secrets.GITHUB_TOKEN }}"
+        package_root: "/path/to/subdirectory"
