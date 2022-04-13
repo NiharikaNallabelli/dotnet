@@ -29,13 +29,5 @@ jobs:
           push: true
           tags: niharika0606/dot-net:v1  
     
-   build:
-    runs-on: ubuntu-latest
-    steps:
-    - uses: actions/checkout@v2
-    - uses: Klemensas/action-autotag@stable
-      with:
-        TOKEN_GITHUB: "${{ secrets.TOKEN_GITHUB }}"
-        package_root: "/path/to/subdirectory"
-        tag_prefix: "v"
+  
 
